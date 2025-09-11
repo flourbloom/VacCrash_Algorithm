@@ -10,3 +10,9 @@ def caesar(text, shift):
 
 print(caesar("Hello, World!", 3))  # Khoor, Zruog!
 print(caesar(caesar("Hello, World!", 3),-3))  # Hello, World!
+
+# Decrypt function
+def decrypt_caesar(text,shift):
+  return caesar(text, -shift)
+
+print(decrypt_caesar("Khoor, Zruog!", 3))
